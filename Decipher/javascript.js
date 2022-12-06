@@ -1,0 +1,3 @@
+alert(`Hey, thanks for visiting our website,...
+click 'OK'
+`);

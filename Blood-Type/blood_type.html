@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Blood Transfusion</title>
+    </head>
+    <body>
+        <h1>Blood Transfusion</h1>
+
+        <h3>
+            When a person receives a blood transfusion, it is essential to make sure that the donor's blood type is compatible with
+            the receiver's blood type. <br>Receiving a blood type that is not compatible with your own can be life-threating,<br> so blood
+            banks always make sure to note the type of blood they receive from donors so that they can ensure a safe transfusion.
+        </h3>
+        <script>
+              //var askNumbera = 'A';
+              //var askNumberb = 'B';
+        </script>
+        <script src="javascript.js">'Welcome to my site'</script>
+        <script>
+            //var askNumbera = 'A';
+           // var askNumberb = 'A';
+          var askNumbera = prompt("Donar's Blood Type: ");
+          var askNumberb = prompt("Receiver' Blood Type: ");
+        
+            //let blood_type;
+
+          if (askNumbera==askNumberb&&askNumberb==askNumbera||askNumbera&&askNumberb=="O-"||askNumbera=="A+"&&askNumberb=="AB+" || askNumbera == "A+" && askNumberb == "O+"){
+            document.write("<b> Blood Types are compatible </b>");
+            console.log("<b> Blood Types are compatible </b>");
+          }else{
+            console.log("<b> Blood Types ain't no compatible </b>");
+            document.write("<b> Blood Types ain't no compatible </b>");
+          }
+
+        </script>
+       
+    </body>
+</html>

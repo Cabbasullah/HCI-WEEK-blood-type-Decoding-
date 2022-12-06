@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Decipher programming</title>
+    </head>
+    <body>
+        <h1>Decoding Computer programming</h1>
+
+        <h3>
+            "Decoding reverses those line of codes. <br> It deconstructs the programming that has been made. <br> This is done by translating
+            code lines into plain text <br> or other format that makes it easier to read". <br>https://techmonitor.ai/what-is/what-is-decoding-4945797
+            </h3>
+    <script>
+              //var askNumbera = 'A';
+                //var askNumberb = 'B';
+                </script>
+                <script src="javascript.js">'Welcome to my site'</script>
+            <script>
+         function Decipher(eMessage, key) {
+                const alphabet = ['dummychar', 'a', 'b',
+                 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+                'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+                let rslt = [], result = []
+                var keyString = key.toString();
+
+                j = 0;
+
+                for (let i = 0; i < eMessage.length; i++) {
+                    if (j === keyString.length) {
+                        j = 0
+                    }
+                    rslt[i] = eMessage[i] - keyString[j]
+                    result[i] = alphabet[rslt[i]];
+                    j++
+                }
+
+                let name = result.join("")
+                console.log(name);
+                document.write( name,"<br>");
+                
+            }
+
+
+
+            Decipher([2, 11, 5, 10, 20], 1939);
+            Decipher([14, 30, 11, 1, 20, 17, 18, 18], 1990)
+            Decipher([6, 4, 1, 3, 9, 20], 100)
+
+</script>
+
+</body>
+</html>
